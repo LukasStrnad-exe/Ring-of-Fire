@@ -4,6 +4,36 @@
     width: 100dvw;
     max-width: 100%;
     max-height: 100%;
-    background-image: url('../../../public/assets/img/startscreen/startscreen_bg.png');
-    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.startscreen_button{
+    width: 200px;
+    height: 50px;
+    background-color: #ff0000;
+    color: #131313;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 100ms; 
+
+    &:hover{
+        background-color: #af2121;
+        transform: scale(1.2);
+    }
+}
+
+.startscreen_title{
+    color: #ff0000;
+    font-size: 150px;
+    font-weight: bold;
+    text-align: center;
 }
