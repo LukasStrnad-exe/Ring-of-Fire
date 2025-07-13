@@ -1,3 +1,8 @@
 <div class="game_container">
-    <img  src="../../../public/assets/img/playing_cards-master/card_cover.png" alt="stable">
+    <div class="card_stack">
+        <img [ngStyle]="{'right.px' : i*3}" *ngFor="let c of [1,2,3,4] let i = index" 
+        src="/assets/img/playing_cards-master/card_cover.png" alt="stable">
+        <img (click)="takeCard()" [class.pick_card]="pickCardAnimation" class="top_card" style="right: 12px;"
+        src="/assets/img/playing_cards-master/card_cover.png" alt="stable">
+    </div>
 </div>

@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router'; // Add this import
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-startscreen',
   standalone: true,
   imports: [],
   templateUrl: './startscreen.component.html',
-  styleUrls: ['./startscreen.component.scss'] // Use 'styleUrls' (plural)
+  styleUrls: ['./startscreen.component.scss']
 })
 export class StartscreenComponent {
   constructor(private router: Router) { }
