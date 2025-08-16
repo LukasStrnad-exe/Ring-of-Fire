@@ -1,4 +1,4 @@
-.game_container{
+.game_container {
     height: 100dvh;
     width: 100dvw;
     max-width: 100%;
@@ -12,8 +12,9 @@
 }
 
 .card_stack {
-    position: relative; 
-    img{
+    position: relative;
+
+    img {
         position: absolute;
         width: 120px;
     }
@@ -22,9 +23,15 @@
 .top_card {
     cursor: pointer;
     transition: transform 0.1s ease;
+
     &:hover {
         transform: scale(1.1) translateY(-10px);
     }
+}
+
+.played_card {
+    right: 12px;
+    transform: scale(1) translateX(240px) translateY(-280px) rotate(10deg);
 }
 
 .pick_card {
@@ -37,12 +44,15 @@
     0% {
         transform: scale(1);
     }
+
     40% {
         transform: scale(1.5);
     }
+
     50% {
         transform: scale(1.5);
     }
+
     100% {
         transform: scale(1) translateX(240px) translateY(-280px) rotate(10deg);
     }
