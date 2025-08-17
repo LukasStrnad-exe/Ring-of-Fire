@@ -1,3 +1,9 @@
+<app-player 
+  *ngFor="let player of game.players; let i = index" 
+  [ngStyle]="{'top.px': 100 +(i * 60)}" 
+  [name]="player"
+  class="player_position">
+</app-player>
 <div class="game_container">
   <div class="card_stack">
     <img [ngStyle]="{ 'right.px': i * 3 }" *ngFor="let c of [1, 2, 3, 4]; let i = index"
