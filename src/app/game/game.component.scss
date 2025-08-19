@@ -62,3 +62,18 @@
     position: absolute;
     right: 0;
 }
+
+.add_button {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: #FF0000;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    &:hover {
+        background-color: #b91414;
+    }
+}

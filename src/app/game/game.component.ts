@@ -2,13 +2,14 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Game } from '../../models/game';
 import { PlayerComponent } from "./player/player.component";
+import { MatIconModule } from '@angular/material/icon';
 
 @Component({
   selector: 'app-game',
   standalone: true,
-  imports: [CommonModule, PlayerComponent],
+  imports: [CommonModule, PlayerComponent, MatIconModule],
   templateUrl: './game.component.html',
-  styleUrls: ['./game.component.scss']
+  styleUrl: './game.component.scss'
 })
 
 export class GameComponent {
