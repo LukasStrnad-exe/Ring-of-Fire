@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Game } from '../../models/game';
 import { PlayerComponent } from "./player/player.component";
+import { InformationCardComponent } from "./information-card/information-card.component";
 import { DialogAddPlayerComponent } from "./dialog-add-player/dialog-add-player.component";
 import { MatIconModule } from '@angular/material/icon';
 import {ChangeDetectionStrategy, inject} from '@angular/core';
@@ -12,7 +13,7 @@ import {MatDialog} from '@angular/material/dialog';
 @Component({
   selector: 'app-game',
   standalone: true,
-  imports: [CommonModule, PlayerComponent, MatIconModule, FormsModule, MatButtonModule],
+  imports: [CommonModule, PlayerComponent, MatIconModule, FormsModule, MatButtonModule, InformationCardComponent],
   templateUrl: './game.component.html',
   styleUrl: './game.component.scss'
 })

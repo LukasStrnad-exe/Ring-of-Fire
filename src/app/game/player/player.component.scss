@@ -1,7 +1,7 @@
 .player {
     display: flex;
     align-items: center;
-    background-color: #ff0000;
+    background-color: #92000091;
     font-size: 30px;
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
@@ -12,4 +12,8 @@
       margin-left: 8px;
       object-fit: cover;
     }
+}
+
+.player_active {
+    background-color: #ff0000;
 }
